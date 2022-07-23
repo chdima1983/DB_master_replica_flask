@@ -6,13 +6,14 @@ FLUSH PRIVILEGES;
 ```
 
 SHOW MASTER STATUS\G
+
 Take this data:
 ```
 File: mysql-binlog.000001
 Position: 851
 ```
 
-#Make this in MYSQL database in replica instance wuth your data.
+#Make this in MYSQL database in replica instance with your data.
 ```
 CHANGE MASTER TO MASTER_HOST='172.31.36.226' ,
     MASTER_USER='replica' ,
