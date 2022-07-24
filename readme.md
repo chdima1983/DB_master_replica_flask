@@ -1,9 +1,9 @@
-### Homework DB (master-replica)
+# Homework DB (master-replica)
 
 
 In the ansible/templates/readme.md file info how to set up master-replica db servers
 
-# In ansible folder make an .env file for correct work:
+### In ansible folder make an .env file for correct work:
 
 ```
 FLASK_APP="api.py"
