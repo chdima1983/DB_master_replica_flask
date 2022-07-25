@@ -54,6 +54,7 @@
         groups: docker
         append: yes
 
+## pip
     - name: install 'Docker SDK for Python'
       pip:
         name:
