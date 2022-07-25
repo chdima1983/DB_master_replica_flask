@@ -98,11 +98,14 @@
         update: yes
 
 
-## Be sure to create an .env file. The content is described in the readme file
-    - name: Write env files
-      copy:
-        src: ./.env
-        dest: /home/ubuntu/flaskapi/
+## Copy .env file
+    - name: Copy conf env_files
+      template:
+        src: templates/.env.j2
+        dest: /home/ubuntu/flaskapi/.env
+        owner: ubuntu
+        group: ubuntu
+        mode: 0755
 
 
     - name: Run `docker-compose up`
