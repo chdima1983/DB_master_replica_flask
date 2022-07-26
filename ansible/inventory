@@ -3,3 +3,7 @@ web-server ansible_host=3.70.215.151
 [db_servers]    
 master  ansible_host=3.120.227.159  private_ip=172.31.36.226    server_id=101
 replica    ansible_host=35.158.164.122  private_ip=172.31.37.194    server_id=102
+
+[all:vars]
+db_username=Anyusername
+db_password=ANyDBPassword
